@@ -3,6 +3,16 @@
     EJERCICIO 00:
     Dados dos numeros que se ingresan en variables separadas, informar cuantos son positivos
 
+    *********************
+    int valor = 1;
+        if(valor == true){
+            cout << "Felicidades.."
+        }
+
+    bool valor = -1;
+        cout << valor; //  mostrar 1, porque es una variable booleana y tranforma a 1 y muestra y, si era -2 tranforma a 1 y muestra 1
+
+
 
 */
 
