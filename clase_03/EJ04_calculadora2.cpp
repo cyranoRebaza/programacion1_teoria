@@ -19,25 +19,26 @@ int main(){
     // declaro las variables
     int numero1;
     int numero2;
-    int resultado;
+    float resultado;
 
     int opcion;
 
     // pido los numeros
+    cout << "*** Ingrese los numeros para la operacion ***\n" << endl;
     cout << "Ingrese el primer numero: ";
     cin >> numero1;
 
     cout << "Ingrese el segundo numero: ";
     cin >> numero2;
 
-
-    cout << endl << "Ingrese la operacion que desea realizar:" << endl;
+    cout << "Elija la opcion que desea realizar:\n" << endl;
 
     cout << "1 - suma" << endl;
     cout << "2 - resta" << endl;
     cout << "3 - producto" << endl;
+    cout << "4 - division" << endl;
 
-    cout << endl;
+    cout << endl << "Ingrese la operacion que desea realizar: ";
     cin >> opcion;
 
     // proceso
@@ -60,6 +61,15 @@ int main(){
             resultado = numero1 * numero2;
             break;
 
+        case 4:
+            if(numero2 > 0){
+                resultado = (float)numero1 / numero2;
+            }
+            else{
+                cout << "No se puede dividir por cero " << endl;
+            }
+            break;
+
         default:
             cout << "El valor ingresado no es correcto " << endl;
             break;
@@ -67,7 +77,7 @@ int main(){
 
     }
 
-    cout << "El resultado de la operacion es: " << resultado << endl;
+    cout << "\nEl resultado de la operacion es: " << resultado << endl;
 
     system("pause");
     return 0;
