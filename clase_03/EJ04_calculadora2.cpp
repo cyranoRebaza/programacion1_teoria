@@ -31,7 +31,7 @@ int main(){
     cout << "Ingrese el segundo numero: ";
     cin >> numero2;
 
-    cout << "Elija la opcion que desea realizar:\n" << endl;
+    cout << "\nElija la opcion que desea realizar:\n" << endl;
 
     cout << "1 - suma" << endl;
     cout << "2 - resta" << endl;
