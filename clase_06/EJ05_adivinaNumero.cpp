@@ -1,4 +1,3 @@
-
 /*
     EJERCICIO 00: adivinar un numero
 
@@ -31,7 +30,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     // declaro las variables
     int opcion;
@@ -41,7 +41,8 @@ int main(){
 
 
     // CREAR EL MENU
-    do{
+    do
+    {
 
 
         // muestro el menu
@@ -60,8 +61,10 @@ int main(){
         cin >> opcion;
 
         // EJECUTAR LAS OPCIONES
-        switch(opcion){
-        case 1:{
+        switch(opcion)
+        {
+        case 1:
+        {
             /// TODO: Pedir el nombre
             system("cls"); // entra al case y borra la pantalla
 
@@ -73,7 +76,8 @@ int main(){
 
             //pedir un numero al usuario hasta que lo adivine (do while)
 
-            do{
+            do
+            {
                 intentos++; // por cada numero cuento los intentos
 
                 cout << "****************" << endl;
@@ -82,12 +86,15 @@ int main(){
                 cin >> numeroPensadoUsuario;
 
                 // pistas al usuario a partir del intento 3
-                if(intentos >= 3){
+                if(intentos >= 3)
+                {
 
-                    if(numeroPensadoUsuario > numeroPensadoPC){
+                    if(numeroPensadoUsuario > numeroPensadoPC)
+                    {
                         cout << "El numero pensado es mas chico " << endl;
                     }
-                    else if(numeroPensadoUsuario < numeroPensadoPC){
+                    else if(numeroPensadoUsuario < numeroPensadoPC)
+                    {
                         cout << "El numero pensado es mas Grande " << endl;
                     }
 
@@ -96,13 +103,15 @@ int main(){
 
 
 
-            }while(numeroPensadoUsuario != numeroPensadoPC);
+            }
+            while(numeroPensadoUsuario != numeroPensadoPC);
 
 
             cout << endl << "FELICIDADES!!!..Adivinaste el numero en el intento # "<< intentos << endl;
 
             //algoritmo de busqueda del minimo;
-            if(intentosMinimo == 0 || intentos < intentosMinimo){
+            if(intentosMinimo == 0 || intentos < intentosMinimo)
+            {
                 intentosMinimo = intentos;
             }
 
@@ -115,10 +124,12 @@ int main(){
         case 2:
             /// TODO: Muestre el numero que adivino
             system("cls");
-            if(intentosMinimo > 0){
+            if(intentosMinimo > 0)
+            {
                 cout << "El menor intento hasta ahora es: # "<< intentosMinimo << endl;
             }
-            else{
+            else
+            {
                 cout << "Aun no se ha jugado..." << endl;
             }
             break;
@@ -141,11 +152,12 @@ int main(){
 
         }
 
-    // para mostrar un mensaje antes de salir del while
-    cout << "Presione cualquier tecla para continuar...";
+        // para mostrar un mensaje antes de salir del while
+        cout << "Presione cualquier tecla para continuar...";
 
-    system("pause>nul"); // espera una pausa pero no informara por pantalla
-    }while(opcion != 0);
+        system("pause>nul"); // espera una pausa pero no informara por pantalla
+    }
+    while(opcion != 0);
 
 
 
