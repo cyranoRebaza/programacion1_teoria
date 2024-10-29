@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1730231098 source:b:\utn-frgp\materias_1c\04_programacion1\programacion1_teoria\clase_09\juego25\main.cpp
+	<iostream>
+	"menu.h"
+	<ctime>
+
+1730231014 b:\utn-frgp\materias_1c\04_programacion1\programacion1_teoria\clase_09\juego25\menu.h
+
+1730231014 source:b:\utn-frgp\materias_1c\04_programacion1\programacion1_teoria\clase_09\juego25\menu.cpp
+	<iostream>
+	"menu.h"
+	"juego.h"
+
+1730231014 b:\utn-frgp\materias_1c\04_programacion1\programacion1_teoria\clase_09\juego25\juego.h
+
+1730231014 source:b:\utn-frgp\materias_1c\04_programacion1\programacion1_teoria\clase_09\juego25\juego.cpp
+	<iostream>
+	"juego.h"
+
